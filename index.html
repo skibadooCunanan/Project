@@ -4,134 +4,187 @@
   <meta charset="utf-8">
   <title>OBMC FV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     :root {
       --brand-blue: #0d6efd;
       --brand-orange: #fd7e14;
     }
 
-<script>
-  { background-color: #FFFFFF; }
-    .brand-accent { color: var(--brand-orange); }
-    .navbar { border-bottom: 1px solid #e9ecef; }
-    .hero {
-      background: linear-gradient(180deg, rgba(13,110,253,0.06), rgba(253,126,20,0.06));
+    body {
+      background-color: #ffffff;
     }
-    .section-title { border-left: 4px solid var(--brand-orange); padding-left: .75rem; }
+
+    .brand-accent {
+      color: var(--brand-orange);
+    }
+
+    .navbar {
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .hero {
+      background: linear-gradient(
+        180deg,
+        rgba(13,110,253,0.06),
+        rgba(253,126,20,0.06)
+      );
+    }
+
+    .section-title {
+      border-left: 4px solid var(--brand-orange);
+      padding-left: 0.75rem;
+    }
   </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-white sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="Home Page.html">OBMC <span class="brand-accent">FV</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="Home Page.html">Home Page</a></li>
-          <li class="nav-item"><a class="nav-link" href="Courses Page.html">Offered Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="Enrollment Page.html">Enroll Now</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contact Page.html">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="About us page.html">About Us</a></li>
-        </ul>
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="Home Page.html">
+      OBMC <span class="brand-accent">FV</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="Home Page.html">Home Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="Courses Page.html">Offered Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="Enrollment Page.html">Enroll Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact Page.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="About us page.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">About OBMC</h1>
+        <p class="lead text-secondary">Short overview of OBMC.</p>
+        <a href="Courses Page.html" class="btn btn-primary me-2">Explore Courses</a>
+        <a href="Enrollment Page.html" class="btn btn-warning text-white">Enroll Now</a>
       </div>
-    </div>
-  </nav>
 
-  <header class="hero py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold">About OBMC</h1>
-          <p class="lead text-secondary">Short overview of OBMC.</p>
-          <a href="Courses Page.html" class="btn btn-primary me-2">Explore Courses</a>
-          <a href="Enrollment Page.html" class="btn btn-warning text-white">Enroll Now</a>
-        </div>
-<div id="obmcCarousel" class="carousel slide carousel-fade rounded shadow"
-     data-bs-ride="carousel"
-     data-bs-interval="5000">
+      <div class="col-lg-6">
+        <div id="obmcCarousel" class="carousel slide carousel-fade rounded shadow"
+             data-bs-ride="carousel"
+             data-bs-interval="5000">
 
-  <div class="carousel-inner rounded">
-    <div class="carousel-item active">
-      <img src="OBMC_Fairviewjpg" class="d-block w-100" alt="OBMC">
-    </div>
-    <div class="carousel-item">
-      <img src="Bookstore.webp" class="d-block w-100" alt="Bookstore">
-    </div>
-    <div class="carousel-item">
-      <img src="cafe.webp" class="d-block w-100" alt="Bistro">
-    </div>
-    <div class="carousel-item">
-      <img src="unnamed.webp" class="d-block w-100" alt="Library">
-    </div>
-    <div class="carousel-item">
-      <img src="teatro.webp" class="d-block w-100" alt="Teatro">
-
-      </div>
-    </div>
-  </header>
-
-  <main class="container my-5">
-    <section class="mb-5">
-      <h2 class="section-title h3">Why Choose OBMC</h2>
-      <div class="row g-4 mt-1">
-        <div class="col-md-4">
-          <div class="p-4 bg-light rounded shadow-sm h-100">
-            <h3 class="h5">Quality Education</h3>
-            <p class="mb-0 text-secondary">  OBMC provides high-quality education that focuses on academic excellence and student development.</p>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="OBMC_Fairview.jpg" class="d-block w-100" alt="OBMC">
+            </div>
+            <div class="carousel-item">
+              <img src="Bookstore.webp" class="d-block w-100" alt="Bookstore">
+            </div>
+            <div class="carousel-item">
+              <img src="cafe.webp" class="d-block w-100" alt="Bistro">
+            </div>
+            <div class="carousel-item">
+              <img src="unnamed.webp" class="d-block w-100" alt="Library">
+            </div>
+            <div class="carousel-item">
+              <img src="teatro.webp" class="d-block w-100" alt="Teatro">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 bg-light rounded shadow-sm h-100">
-            <h3 class="h5">Holistic Growth</h3>
-            <p class="mb-0 text-secondary"> The school supports holistic growth by nurturing students’ skills, values, and personal character.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 bg-light rounded shadow-sm h-100">
-            <h3 class="h5">Modern Facilities</h3>
-            <p class="mb-0 text-secondary"> OBMC offers modern facilities that create a safe, comfortable, and effective learning environment.</p>
-          </div>
+
         </div>
       </div>
-    </section>
 
-    <section>
-      <h2 class="section-title h3">FAQ</h2>
-      <div class="table-responsive mt-3">
-        <table class="table table-bordered align-middle">
-          <thead class="table-primary">
-            <tr>
-              <th>Category</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Location</td><td>Napoli Street, Neapolitan IV, Brittany Subdivision, Fairview, Quezon City</td></tr>
-            <tr><td>Programs</td><td>Casa to Senior High School (see Courses Offer).</td></tr>
-            <tr><td>Calendar</td><td>See "Contact Us" for schedule.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
-  <footer class="py-4 border-top">
-    <div class="container text-center text-secondary small">
-      © <span id="year"></span> OBMC FV. All rights reserved.
     </div>
-  </footer>
-<body>
-</style>
-</script>
-  <script>
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</header>
+
+<main class="container my-5">
+
+  <section class="mb-5">
+    <h2 class="section-title h3">Why Choose OBMC</h2>
+    <div class="row g-4 mt-1">
+
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h3 class="h5">Quality Education</h3>
+          <p class="mb-0 text-secondary">
+            OBMC provides high-quality education that focuses on academic excellence and student development.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h3 class="h5">Holistic Growth</h3>
+          <p class="mb-0 text-secondary">
+            The school supports holistic growth by nurturing students’ skills, values, and personal character.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h3 class="h5">Modern Facilities</h3>
+          <p class="mb-0 text-secondary">
+            OBMC offers modern facilities that create a safe, comfortable, and effective learning environment.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title h3">FAQ</h2>
+    <div class="table-responsive mt-3">
+      <table class="table table-bordered align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>Category</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Location</td>
+            <td>Napoli Street, Neapolitan IV, Brittany Subdivision, Fairview, Quezon City</td>
+          </tr>
+          <tr>
+            <td>Programs</td>
+            <td>Casa to Senior High School (see Courses Offer).</td>
+          </tr>
+          <tr>
+            <td>Calendar</td>
+            <td>See "Contact Us" for schedule.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="py-4 border-top">
+  <div class="container text-center text-secondary small">
+    © <span id="year"></span> OBMC FV. All rights reserved.
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
+
+
 
 
 
